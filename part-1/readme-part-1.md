@@ -10,7 +10,7 @@ Create a simple GUI application that tracks how many times a user clicks a butto
 Define the UI components and a counter variable.
 
 ```java
-public class ClickCounterApp extends JFrame implements ActionListener {
+public class E1 extends JFrame implements ActionListener {
     private JLabel counterLabel;    // Displays the click count
     private JButton clickButton;    // Button to register clicks
     private int count = 0;          // Stores the current count
@@ -23,7 +23,7 @@ public class ClickCounterApp extends JFrame implements ActionListener {
 Initialize and arrange components in the window.
 
 ```java
-public ClickCounterApp() {
+public E1() {
     setTitle("Click Counter");
     counterLabel = new JLabel("Clicks: 0", SwingConstants.CENTER);
     clickButton = new JButton("Click Me");
@@ -55,7 +55,7 @@ Launch the GUI on the Event Dispatch Thread.
 
 ```java
 public static void main(String[] args) {
-    SwingUtilities.invokeLater(() -> new ClickCounterApp().setVisible(true));
+    SwingUtilities.invokeLater(() -> new E1().setVisible(true));
 }
 ```
 
