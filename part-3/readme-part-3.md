@@ -10,7 +10,7 @@ Create a UI with several color buttons ("Red", "Green", "Blue", ...) that, when 
 Define the main panel and color buttons.
 
 ```java
-public class ThemeColorSelectorApp extends JFrame implements ActionListener {
+public class E3 extends JFrame implements ActionListener {
     private JPanel mainPanel;      // The panel whose background will change
     private JButton redButton;     // Button to select red theme
     private JButton greenButton;   // Button to select green theme
@@ -24,7 +24,7 @@ public class ThemeColorSelectorApp extends JFrame implements ActionListener {
 Initialize components, set action commands, and arrange using `BorderLayout`.
 
 ```java
-public ThemeColorSelectorApp() {
+public E3() {
     setTitle("Theme Color Selector");
 
     mainPanel = new JPanel();
@@ -75,7 +75,7 @@ Launch the application safely on the Swing thread.
 
 ```java
 public static void main(String[] args) {
-    SwingUtilities.invokeLater(() -> new ThemeColorSelectorApp().setVisible(true));
+    SwingUtilities.invokeLater(() -> new E3().setVisible(true));
 }
 ```
 
