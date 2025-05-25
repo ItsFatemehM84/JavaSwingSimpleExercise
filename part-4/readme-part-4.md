@@ -10,7 +10,7 @@ Design a comprehensive registration form using `GridBagLayout`. Students will ar
 Define all UI components and layout constraints.
 
 ```java
-public class RegistrationFormApp extends JFrame implements ActionListener {
+public class E4 extends JFrame implements ActionListener {
     private JTextField txtName;           // User name input
     private JTextField txtEmail;          // User email input
     private JPasswordField txtPassword;   // Password input
@@ -27,7 +27,7 @@ public class RegistrationFormApp extends JFrame implements ActionListener {
 Initialize components, configure `GridBagLayout`, and add items.
 
 ```java
-public RegistrationFormApp() {
+public E4() {
     setTitle("User Registration");
     setSize(500, 350);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -120,7 +120,7 @@ Run the form on the Swing event thread.
 
 ```java
 public static void main(String[] args) {
-    SwingUtilities.invokeLater(() -> new RegistrationFormApp().setVisible(true));
+    SwingUtilities.invokeLater(() -> new E4().setVisible(true));
 }
 ```
 
